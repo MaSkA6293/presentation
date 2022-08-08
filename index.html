@@ -1,40 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>SPA and SEO</section>
+        <section
+          data-background-image="./presentation/2.jpg"
+          data-background-size="1200px"
+          data-background-repeat="no-repeat"
+        ></section>
+        <section data-state="make-it-pop">
+          <h5>SPA advantages:</h5>
+          <ul>
+            <li>High speed</li>
+            <li>universalism and availability</li>
+            <li>flexibility and responsiveness</li>
+            <li>no reload and re-render</li>
+          </ul>
+        </section>
+        <section>
+          <h5>Popular frameworks:</h5>
+          <ul>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Angular</li>
+          </ul>
+        </section>
+        <section>
+          <h5>SPA problems:</h5>
+          <ul>
+            <li>A lot of time first renders</li>
+            <li>SEO is difficult</li>
+            <li>The search robot sees the site as empty</li>
+          </ul>
+        </section>
+        <section>
+          <h5>The proplem: render blank page on load</h5>
+          <ul>
+            <li>Static Site Generation (SSG)</li>
+            <li>Server-Side Rendering (SSR)</li>
+          </ul>
+        </section>
+        <section>
+          <h5>Static Site Generation (SSG)</h5>
+          <p>Pre-render the site before uploading it to the server.</p>
+          <ul>
+            <li>
+              Great for simple web pages without interacting with backend and
+              API
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h5>Server-Side Rendering (SSR):</h5>
+          <p>Render content at runtime on the server</p>
+          <ul>
+            <li>
+              With this approach, we will be able to make backend API requests
+              and return HTML along with the required content.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h5>Server-Side Rendering (SSR)</h5>
+          <ul>
+            <li>Server (start app as user in browser)</li>
+            <li>
+              Server make requests, get resourses, create HTML and fill the
+              state
+            </li>
+            <li>Server send the HTML and the resourses</li>
+            <li>
+              Client gets the resourses, synchronizes state and work as SPA.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h5>Problems SSR:</h5>
+          <ul>
+            <li>
+              The App is devided into Client and Server - support is difficult
+            </li>
+            <li>Async requests on Server</li>
+            <li>Synchronization</li>
+          </ul>
+        </section>
+        <section>
+          <h5>Bottom line</h5>
+          <ul>
+            <li>SEO-friendly site and SPA is possible</li>
+            <li>Estimate your App and choose the way</li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
