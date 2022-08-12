@@ -19,29 +19,41 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>SPA and SEO</section>
+        <section>
+          <h5>SPA and SEO</h5>
+          <p>Why did I choose this topic?</p>
+        </section>
+        <section
+          data-background-image="./presentation/react-works.png"
+          data-background-size="1200px"
+          data-background-repeat="no-repeat"
+        ></section>
+
+        <section
+          data-background-image="./presentation/myProjects.png"
+          data-background-size="1200px"
+          data-background-repeat="no-repeat"
+        ></section>
+
+        <section data-state="make-it-pop">
+          <h5>How about SEO?</h5>
+        </section>
+
         <section
           data-background-image="./presentation/2.jpg"
           data-background-size="1200px"
           data-background-repeat="no-repeat"
         ></section>
+
         <section data-state="make-it-pop">
           <h5>SPA advantages:</h5>
           <ul>
             <li>High speed</li>
-            <li>universalism and availability</li>
-            <li>flexibility and responsiveness</li>
-            <li>no reload and re-render</li>
+            <li>No reload and re-render</li>
+            <li>Ease in building</li>
           </ul>
         </section>
-        <section>
-          <h5>Popular frameworks:</h5>
-          <ul>
-            <li>React</li>
-            <li>Vue</li>
-            <li>Angular</li>
-          </ul>
-        </section>
+
         <section>
           <h5>SPA problems:</h5>
           <ul>
@@ -50,63 +62,99 @@
             <li>The search robot sees the site as empty</li>
           </ul>
         </section>
+
         <section>
-          <h5>The proplem: render blank page on load</h5>
+          <h5>Briefly why SEO is important</h5>
           <ul>
-            <li>Static Site Generation (SSG)</li>
+            <li>
+              About 90% of the traffic comes from the first page of the results
+            </li>
+            <li>About 70% of traffic from the first five sites</li>
+          </ul>
+        </section>
+
+        <section>
+          <h5 style="top: 0px">What the search robot sees on the page?</h5>
+          <img src="./presentation/robotView.png" width="800px" />
+        </section>
+
+        <section>
+          <h5>The problem: render blank page on load</h5>
+          <p>Google in October 2015 made the important adversity</p>
+          <ul>
+            <li>Rendering longer than 5 seconds</li>
+            <li>Isn’t possible to scan the structure of the site</li>
+            <li>Google site analize isn’t possible</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Our ways</p>
+          <ul>
             <li>Server-Side Rendering (SSR)</li>
+            <li>Static Site Generation (SSG) or prerender</li>
           </ul>
         </section>
         <section>
-          <h5>Static Site Generation (SSG)</h5>
-          <p>Pre-render the site before uploading it to the server.</p>
+          <h5>How it works (SSR):</h5>
+          <p>Split our code</p>
           <ul>
-            <li>
-              Great for simple web pages without interacting with backend and
-              API
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h5>Server-Side Rendering (SSR):</h5>
-          <p>Render content at runtime on the server</p>
-          <ul>
-            <li>
-              With this approach, we will be able to make backend API requests
-              and return HTML along with the required content.
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h5>Server-Side Rendering (SSR)</h5>
-          <ul>
-            <li>Server (start app as user in browser)</li>
-            <li>
-              Server make requests, get resourses, create HTML and fill the
-              state
-            </li>
-            <li>Server send the HTML and the resourses</li>
-            <li>
-              Client gets the resourses, synchronizes state and work as SPA.
-            </li>
+            <li>Render content at runtime on the server</li>
+            <li>Backend will check: Is JS on?</li>
           </ul>
         </section>
         <section>
           <h5>Problems SSR:</h5>
           <ul>
             <li>
-              The App is devided into Client and Server - support is difficult
+              The App is divided into Client and Server - support is difficult
             </li>
-            <li>Async requests on Server</li>
-            <li>Synchronization</li>
+            <li>Synchronous state and components life cycles</li>
           </ul>
         </section>
         <section>
+          <h5>Static Site Generation (SSG) or prerender</h5>
+          <p>How it works?</p>
+        </section>
+
+        <section>
+          <h5>Up sides</h5>
+          <ul>
+            <li>Minimum code modify</li>
+            <li>Support is very simple</li>
+            <li>Easy to apply</li>
+          </ul>
+          <h5>Down sides</h5>
+          <ul>
+            <li>It’s useless for pages with often changes data</li>
+            <li>Some prerender services aren’t free</li>
+          </ul>
+        </section>
+
+        <section>
+          <h5>Free solutions</h5>
+          <ul>
+            <li>
+              OpenSource prerender we can implement on your own server with
+              Node.js
+            </li>
+            <li>
+              Prerender SPA Plugin, which we can apply to modify our
+              webpack.config.js
+            </li>
+          </ul>
+        </section>
+
+        <section>
           <h5>Bottom line</h5>
           <ul>
-            <li>SEO-friendly site and SPA is possible</li>
-            <li>Estimate your App and choose the way</li>
+            <li>We have to take this subject into account</li>
+            <li>Make a decision</li>
+            <li>And choose the way</li>
           </ul>
+        </section>
+        <section>
+          <h3>Thank you for watching!</h3>
         </section>
       </div>
     </div>
